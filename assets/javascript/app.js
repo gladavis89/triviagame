@@ -14,8 +14,8 @@ var questions = [{
         image: "assets/images/meters.jpg"
     }, {
         question: "Marvin Gaye made Let's get it on in what year?",
-        answers: ["1965", "1981", "1970", "1973"],
-        actual: "1973",
+        answers: ["-1965-", "-1981-", "-1970-", "-1973-"],
+        actual: "-1973-",
         audio: new Audio("assets/audio/MarvinGaye_LetsGetItOn.mp3"),
         image: "assets/images/marvin.jpg"
     }, {
@@ -27,7 +27,7 @@ var questions = [{
     }, {
         question: "Earth, Wind and Fire made released this song on what album?",
         answers: ["September","I Am", "All 'n All", "Raise!"],
-        actual: "Semptember",
+        actual: "September",
         audio: new Audio("assets/audio/EarthWindFire_September.mp3"),
         image: "assets/images/september.jpg"
     }, {
@@ -38,8 +38,8 @@ var questions = [{
         image: "assets/images/rick.jpg"
     }, {
         question: "Vulfpeck was founded when?",
-        answers: ["1971","1969","1999","2011"],
-        actual: "2011",
+        answers: ["-1971-","-1969-","-1999-","-2011-"],
+        actual: "-2011-",
         audio: new Audio("assets/audio/VULFPECK _1612.mp3"),
         image: "assets/images/vulfpeck.jpg"
     }, {
@@ -61,6 +61,7 @@ var questions = [{
 var panel = $('#question');
 var countStartNumber = 30;
 $(document).on('click', '#start-over', function (e) {
+    questions[game.currentQuestion].audio.pause();
     game.reset();
 });
 
@@ -162,10 +163,12 @@ var game = {
         }
     },
     reset: function () {
+        questions[game.currentQuestion].audio.pause();
         this.currentQuestion = 0;
         this.counter = countStartNumber;
         this.correct = 0;
         this.incorrect = 0;
         this.load();
+    
     }
 };
