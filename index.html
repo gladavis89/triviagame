@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trivia!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <style>
+        #body {
+            background-image: url("assets/images/mark.jpg");
+        }
+    </style>
+</head>
+
+<body id="body">
+    <nav class="navbar nav bg-warning">
+        <h1 class="pull-left">Trivia!</h1>
+        <h3 class="pull-right">Do you have what it takes to go through this torture?</h3>
+    </nav>
+    <div class="container">
+        <div class="jumbotron text-center my-4 ">
+            <h2 class="text-warning text-center" id="question">
+               
+            </h2>
+            <div id="answers">
+            
+        </div>
+    </div>
+    
+
+    <div class="container my-4">
+        <div class="jumbotron">
+            <div class="progress bg-warning"></div>
+            <h2 class="text-center">Time left!<p id="time" class="text-danger">00</p></h2>
+        <div class="progress bg-warning m-4">
+
+        </div> 
+    </div>
+    </div>
+<script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
