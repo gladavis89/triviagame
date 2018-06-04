@@ -1,4 +1,4 @@
-// (1) create a set of questions and answers
+
 var questions = [{
         question: "Who made this song?",
         answers: ["Marvin Gaye", "Rick James", "James Brown", "Eddy Grant"],
