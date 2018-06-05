@@ -25,7 +25,7 @@ var questions = [{
         audio: new Audio("assets/audio/Parliament_Flashlight.mp3"),
         image: "assets/images/flash.jpg"
     }, {
-        question: "Earth, Wind and Fire made released this song on what album?",
+        question: "Earth, Wind and Fire released this song on what album?",
         answers: ["September","I Am", "All 'n All", "Raise!"],
         actual: "September",
         audio: new Audio("assets/audio/EarthWindFire_September.mp3"),
@@ -43,7 +43,7 @@ var questions = [{
         audio: new Audio("assets/audio/VULFPECK _1612.mp3"),
         image: "assets/images/vulfpeck.jpg"
     }, {
-        question: "On what number album did Stevie come out with Superstition?",
+        question: "On what album did Stevie come out with Superstition?",
         answers: ["His second album", "His fifteenth album", "His fourth album", "His first album"],
         actual: "His fifteenth album",
         audio: new Audio("assets/audio/StevieWonder_Superstition.mp3"),
